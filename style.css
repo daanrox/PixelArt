@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding-top: 30px;
+}
+
+#title {
+  color: white;
+  text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+}
+
+#colors-section {
+  margin: 20px;
+  display: block;
+  vertical-align: middle;
+}
+
+#color-palette {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color {
+  display: inline-block;
+  border: #222 solid 2px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.color:hover {
+  border: white solid 2px;
+}
+
+.selected {
+  box-shadow: 0 0 10px 1px #444;
+  border: white solid 2px;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border-radius: 100%;
+  border: #222 solid 2px;
+  height: 30px;
+  width: 30px;
+  background-color: #3a50d9;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+button:hover {
+  border: white solid 2px;
+}
+
+span {
+  font-size: 10px;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pixel-board {
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+}
+
+.pixel {
+  background-color: white;
+  border: black solid 1px;
+  width: 40px;
+  height: 40px;
+}
+
+.pixel:hover {
+  border: #3a50d9 solid 2px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 15px;
+  border-radius: 30px;  
+  background: #0a0e27;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #3a50d9;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #3a50d9;
+  cursor: pointer;
+}
+
+footer {
+  font-family: sans-serif;
+  margin-top: 20px;
+  color: grey;
+}
